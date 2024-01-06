@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    image: xandertw/tasty-pastey:latest
+    ports:
+      - "8000:8000"
