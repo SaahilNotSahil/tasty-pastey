@@ -38,10 +38,6 @@ func init() {
 	log.Println("Migrated models successfully!")
 }
 
-func Hello() {
-	log.Println("Hello from database package!")
-}
-
 func CreateUserRecord(user *models.User) error {
 	result := DB.Create(&user)
 	if result.Error != nil {
